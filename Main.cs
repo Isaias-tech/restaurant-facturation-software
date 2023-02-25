@@ -21,5 +21,13 @@ namespace restaurant_facturation_software
         {
             Program.form_sign_in.Show();
         }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            if (Program.CurrentUser.Position != "Admin")
+            {
+                btn_admin_panel.Visible = false;
+            }
+        }
     }
 }

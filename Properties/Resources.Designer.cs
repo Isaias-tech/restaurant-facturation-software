@@ -63,9 +63,29 @@ namespace restaurant_facturation_software.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image_bg_main {
+            get {
+                object obj = ResourceManager.GetObject("image-bg-main", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap image_bgsing_in {
             get {
                 object obj = ResourceManager.GetObject("image bgsing-in", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lvf {
+            get {
+                object obj = ResourceManager.GetObject("lvf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

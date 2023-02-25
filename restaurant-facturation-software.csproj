@@ -105,6 +105,8 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="statics\image bgsing-in.png" />
+    <None Include="statics\image-bg-main.png" />
+    <None Include="statics\lvf.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
