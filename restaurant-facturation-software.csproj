@@ -36,6 +36,9 @@
     <Reference Include="Guna.UI2">
       <HintPath>..\..\..\..\..\Downloads\Guna UI Framework Ultimate 2.0.0.1\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI2 WinForms\.net 2.0\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="Select.HtmlToPdf, Version=22.2.0.0, Culture=neutral, PublicKeyToken=e0ae9f6e27a97018, processorArchitecture=MSIL">
+      <HintPath>packages\Select.HtmlToPdf.22.2.0\lib\net40\Select.HtmlToPdf.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,14 +52,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin_panel\AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_panel\AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cart\Cart.cs" />
+    <Compile Include="cart\Carts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cart\Carts.Designer.cs">
+      <DependentUpon>Carts.cs</DependentUpon>
+    </Compile>
     <Compile Include="DB_Connection.cs" />
     <Compile Include="drinks\Crud_Drinks.cs" />
     <Compile Include="drinks\Drink.cs" />
+    <Compile Include="drinks\Drinks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="drinks\Drinks.Designer.cs">
+      <DependentUpon>Drinks.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu\Menu_items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu\Menu_items.Designer.cs">
+      <DependentUpon>Menu_items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\Reservations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservations\Reservations.Designer.cs">
+      <DependentUpon>Reservations.cs</DependentUpon>
     </Compile>
     <Compile Include="users\Form_Sign_In.cs">
       <SubType>Form</SubType>
@@ -71,10 +105,39 @@
     <Compile Include="reservations\Crud_Reservations.cs" />
     <Compile Include="reservations\Reservation.cs" />
     <Compile Include="users\Crud_Users.cs" />
+    <Compile Include="users\Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="users\Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="users\User.cs" />
     <Compile Include="Utils.cs" />
+    <Compile Include="wines\Crud_Wine.cs" />
+    <Compile Include="wines\Wine.cs" />
+    <Compile Include="wines\Wines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wines\Wines.Designer.cs">
+      <DependentUpon>Wines.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin_panel\AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cart\Carts.resx">
+      <DependentUpon>Carts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="drinks\Drinks.resx">
+      <DependentUpon>Drinks.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu\Menu_items.resx">
+      <DependentUpon>Menu_items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservations\Reservations.resx">
+      <DependentUpon>Reservations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="users\Form_Sign_In.resx">
       <DependentUpon>Form_Sign_In.cs</DependentUpon>
@@ -89,6 +152,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="users\Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wines\Wines.resx">
+      <DependentUpon>Wines.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

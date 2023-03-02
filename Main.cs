@@ -1,4 +1,10 @@
-﻿using System;
+﻿using restaurant_facturation_software.cart;
+using restaurant_facturation_software.drinks;
+using restaurant_facturation_software.menu;
+using restaurant_facturation_software.reservations;
+using restaurant_facturation_software.users;
+using restaurant_facturation_software.wines;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,6 +34,48 @@ namespace restaurant_facturation_software
             {
                 btn_admin_panel.Visible = false;
             }
+        }
+
+        private void btn_admin_panel_Click(object sender, EventArgs e)
+        {
+            AdminPanel ap = new AdminPanel();
+            ap.ShowDialog();
+        }
+
+        private void btn_cart_Click(object sender, EventArgs e)
+        {
+            Carts cart = new Carts();
+            cart.ShowDialog();
+        }
+
+        private void btn_reservations_Click(object sender, EventArgs e)
+        {
+            Reservations reservations = new Reservations();
+            reservations.ShowDialog();
+        }
+
+        private void btn_profile_Click(object sender, EventArgs e)
+        {
+            Profile profile = new Profile();
+            profile.ShowDialog();
+        }
+
+        private void btn_drinks_Click(object sender, EventArgs e)
+        {
+            Drinks drinks = new Drinks();
+            drinks.ShowDialog();
+        }
+
+        private void btn_wines_Click(object sender, EventArgs e)
+        {
+            Wines wines = new Wines();
+            wines.ShowDialog();
+        }
+
+        private void btn_menu_Click(object sender, EventArgs e)
+        {
+            Menu_items mi = new Menu_items();
+            mi.ShowDialog();
         }
     }
 }
